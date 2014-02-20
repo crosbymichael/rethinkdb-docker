@@ -1,4 +1,4 @@
-# Dockerfile for Rethinkdb 1.11.2
+# Dockerfile for Rethinkdb 1.11.3
 # http://www.rethinkdb.com/
 
 FROM ubuntu
