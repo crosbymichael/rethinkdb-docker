@@ -1,5 +1,5 @@
 # http://www.rethinkdb.com/
-# version 1.12.2
+# version 1.12.3
 FROM debian:jessie
 
 ADD add-apt-repository /usr/sbin/add-apt-repository
