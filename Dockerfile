@@ -1,9 +1,11 @@
 # http://www.rethinkdb.com/
-# version 1.12.5
+# version 1.13.3
 FROM debian:jessie
 
-ADD add-apt-repository /usr/sbin/add-apt-repository
-RUN add-apt-repository ppa:rethinkdb/ppa && apt-get update && \
+RUN echo "deb http://download.rethinkdb.com/apt lucid main" | tee /etc/apt/sources.list.d/rethinkdb.list 
+ADD http://download.rethinkdb.com/apt/pubkey.gpg /pubkey.gpg
+
+RUN apt-key add pubkey.gpg && apt-get update && \
     apt-get install -y rethinkdb && \
     mkdir /rethinkdb && chown -R daemon:daemon /rethinkdb 
 
