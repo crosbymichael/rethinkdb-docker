@@ -1,5 +1,5 @@
 # http://www.rethinkdb.com/
-# version 1.14.0
+# version 1.15.0
 FROM debian:jessie
 
 RUN echo "deb http://download.rethinkdb.com/apt lucid main" | tee /etc/apt/sources.list.d/rethinkdb.list 
