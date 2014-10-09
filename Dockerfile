@@ -1,8 +1,8 @@
 # http://www.rethinkdb.com/
 # version 1.15.0
-FROM debian:jessie
+FROM ubuntu:14.04
 
-RUN echo "deb http://download.rethinkdb.com/apt lucid main" | tee /etc/apt/sources.list.d/rethinkdb.list 
+RUN echo "deb http://download.rethinkdb.com/apt trusty main" | tee /etc/apt/sources.list.d/rethinkdb.list 
 ADD http://download.rethinkdb.com/apt/pubkey.gpg /pubkey.gpg
 
 RUN apt-key add pubkey.gpg && apt-get update && \
