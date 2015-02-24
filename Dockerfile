@@ -1,5 +1,5 @@
 # http://www.rethinkdb.com/
-# version 1.16.0
+# version 1.16.2
 FROM ubuntu:14.04
 
 RUN echo "deb http://download.rethinkdb.com/apt trusty main" | tee /etc/apt/sources.list.d/rethinkdb.list 
